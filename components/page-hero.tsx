@@ -21,7 +21,7 @@ export function PageHero({
         muted
         playsInline
         className="pointer-events-none absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 object-cover opacity-15"
-        src="/VID-20261110-WA0091.mp4"
+        src="VID-20261110-WA0091.mp4"
       />
 
       <Reveal className="relative mx-auto max-w-3xl text-center">
