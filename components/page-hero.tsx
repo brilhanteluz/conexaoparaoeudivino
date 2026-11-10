@@ -1,26 +1,6 @@
 import type { LucideIcon } from 'lucide-react'
 import { Reveal } from '@/components/reveal'
 
-export function Mandala({ className }: { className?: string }) {
-  const petals = Array.from({ length: 12 }, (_, i: number) => i * 30)
-  return (
-    <svg viewBox="0 0 200 200" className={className} aria-hidden="true" fill="none" stroke="currentColor">
-      <circle cx="100" cy="100" r="95" strokeWidth="0.5" />
-      <circle cx="100" cy="100" r="75" strokeWidth="0.5" />
-      <circle cx="100" cy="100" r="40" strokeWidth="0.5" />
-      {petals.map((deg: number) => (
-        <g key={deg} transform={`rotate(${deg} 100 100)`}>
-          <ellipse cx="100" cy="55" rx="12" ry="30" strokeWidth="0.5" />
-          <circle cx="100" cy="15" r="3" strokeWidth="0.5" />
-          <line x1="100" y1="5" x2="100" y2="60" strokeWidth="0.3" />
-        </g>
-      ))}
-      <polygon points="100,30 161,135 39,135" strokeWidth="0.5" />
-      <polygon points="100,170 39,65 161,65" strokeWidth="0.5" />
-    </svg>
-  )
-}
-
 export function PageHero({
   icon: Icon,
   eyebrow,
@@ -34,7 +14,16 @@ export function PageHero({
 }) {
   return (
     <section className="relative overflow-hidden px-6 pb-12 pt-16 md:pt-24">
-      <Mandala className="spin-slow pointer-events-none absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 text-primary/15" />
+      {/* Vídeo substituindo a Mandala */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="pointer-events-none absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 object-cover opacity-15"
+        src="/VID-20261110-WA0091.mp4"
+      />
+
       <Reveal className="relative mx-auto max-w-3xl text-center">
         <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-accent/60 text-primary shadow-lg pulse-glow">
           <Icon className="h-7 w-7" />
