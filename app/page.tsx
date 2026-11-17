@@ -43,10 +43,9 @@ export default function Home() {
               Conexão para o Eu Divino
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-[1.05rem] leading-[1.9] text-foreground/85">
-              Aqui você encontrará um espaço sagrado dedicado à espiritualidade, repleto de conteúdos e
-              materiais para nutrir sua jornada. Nossa missão é proporcionar uma conexão profunda com seu
-              Eu Divino, oferecendo conhecimento, inspiração e ferramentas para expandir sua consciência e
-              despertar para a verdadeira essência do seu ser.
+              Um espaço sagrado para cuidar da sua alma. Preparamos conteúdos e ferramentas para iluminar a sua jornada interior,
+              criando uma ponte direta com o seu Eu Superior. Aqui, cada reflexão e material são um convite para você lembrar 
+              quem realmente é e viver em plena harmonia com a sua essência.
             </p>
           </div>
         </Reveal>
